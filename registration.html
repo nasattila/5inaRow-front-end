@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+  <div id="main-content">
+    <form id="registration" method="post" action="http://localhost:3100/api/user/">
+      <i>username:</i>
+      <input type="text" name="username" placeholder="choose username" required/>
+      <i>password:</i>
+      <input type="password" name="password" placeholder="choose password" required/>
+      <em id="submission_error" style='color: red;'></em>
+      <input type="submit" value="REGISTER"/>
+    </form>
+    <br><br><br>
+    <em>already have a username?</em>
+    <button onclick="window.location.href='index.html'">LOG IN</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="load_header_out.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
